@@ -1,11 +1,15 @@
+import { ComponentMeta, ComponentStory } from "@storybook/react-native";
 import { CoolComponent } from "./CoolComponent";
 
-export default {
+const CoolComponentMeta: ComponentMeta<typeof CoolComponent> = {
   title: "components/CoolComponent",
   component: CoolComponent,
 };
+export default CoolComponentMeta;
 
-export const Basic = (args) => <CoolComponent {...args} />;
+type CoolComponentStory = ComponentStory<typeof CoolComponent>;
+
+export const Basic: CoolComponentStory = (args) => <CoolComponent {...args} />;
 
 Basic.args = {
   text: "Hello World",
