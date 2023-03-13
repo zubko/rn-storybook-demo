@@ -10,11 +10,12 @@ module.exports = {
     getTransformOptions: async () => ({
       transform: {
         experimentalImportSupport: false,
-        inlineRequires: false, // false because of storybook-rn
+        inlineRequires: true,
       },
     }),
   },
   resolver: {
+    resolverMainFields: ["sbmodern", "react-native", "browser", "main"],
     sourceExts: ["jsx", "js", "ts", "tsx", "cjs", "json"],
   },
 };
