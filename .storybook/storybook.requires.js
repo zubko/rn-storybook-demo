@@ -48,6 +48,19 @@ try {
 const getStories = () => {
   return {
     "./app/core/components/CoolComponent.stories.tsx": require("../app/core/components/CoolComponent.stories.tsx"),
+    "./app/core/components/ImageButton.stories.tsx": require("../app/core/components/ImageButton.stories.tsx"),
+    "./app/core/components/PrimaryButton.stories.tsx": require("../app/core/components/PrimaryButton.stories.tsx"),
+    "./app/core/components/ProportionalSpacer.stories.tsx": require("../app/core/components/ProportionalSpacer.stories.tsx"),
+    "./app/core/components/ScreenContainer.stories.tsx": require("../app/core/components/ScreenContainer.stories.tsx"),
+    "./app/core/components/SecondaryButton.stories.tsx": require("../app/core/components/SecondaryButton.stories.tsx"),
+    "./app/core/components/Text.stories.tsx": require("../app/core/components/Text.stories.tsx"),
+    "./app/core/navigation/components/HeaderButton.stories.tsx": require("../app/core/navigation/components/HeaderButton.stories.tsx"),
+    "./app/features/auth/components/EmailInput.stories.tsx": require("../app/features/auth/components/EmailInput.stories.tsx"),
+    "./app/features/auth/components/PasswordInput.stories.tsx": require("../app/features/auth/components/PasswordInput.stories.tsx"),
+    "./app/features/auth/components/TextInput.stories.tsx": require("../app/features/auth/components/TextInput.stories.tsx"),
+    "./app/features/auth/screens/LoginScreenView.stories.tsx": require("../app/features/auth/screens/LoginScreenView.stories.tsx"),
+    "./app/features/dashboard/components/StartButton.stories.tsx": require("../app/features/dashboard/components/StartButton.stories.tsx"),
+    "./app/features/dashboard/screens/DashboardScreenView.stories.tsx": require("../app/features/dashboard/screens/DashboardScreenView.stories.tsx"),
   };
 };
 

@@ -2,7 +2,6 @@ import { ComponentMeta, ComponentStory } from "@storybook/react-native";
 import { CoolComponent } from "./CoolComponent";
 
 const CoolComponentMeta: ComponentMeta<typeof CoolComponent> = {
-  title: "components/CoolComponent",
   component: CoolComponent,
 };
 export default CoolComponentMeta;
