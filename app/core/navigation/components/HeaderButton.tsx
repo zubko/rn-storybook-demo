@@ -14,7 +14,7 @@ type Props = ImageButtonProps;
 
 export const HeaderButton: FC<Props> = ({ imageStyle, ...props }) => (
   <ImageButton
-    className="w-8 h-8 items-center content-center bg-blue-300"
+    className="w-8 h-8 items-center justify-center"
     {...props}
     imageStyle={[styles.imageDefaultStyle, imageStyle]}
   />

@@ -1,5 +1,9 @@
-import { ScreenContainer } from "@app/core/components/ScreenContainer";
+import { getAsset } from "@app/core/assets/getAsset";
 import { ProportionalSpacer } from "@app/core/components/ProportionalSpacer";
+import { ScreenContainer } from "@app/core/components/ScreenContainer";
+import { useHeaderRightButton } from "@app/core/navigation/useHeaderRightButton";
+import { useHeaderTitle } from "@app/core/navigation/useHeaderTitle";
+import { useNavigation } from "@react-navigation/native";
 import { FC } from "react";
 import { StartButton } from "../components/StartButton";
 
@@ -12,6 +16,14 @@ export const DashboardScreenView: FC<ScreenViewProps> = ({
   onStartQuiz,
   onShowProfile,
 }) => {
+  const navigation = useNavigation();
+  useHeaderRightButton({
+    navigation,
+    onPress: onShowProfile,
+    imageSource: getAsset("user"),
+  });
+  useHeaderTitle({ navigation, title: "Dashboard" });
+
   return (
     <ScreenContainer>
       <ProportionalSpacer ratioOfFreeSpaceAtTop={1.7}>
@@ -20,18 +32,3 @@ export const DashboardScreenView: FC<ScreenViewProps> = ({
     </ScreenContainer>
   );
 };
-
-// const handleShowProfile = () => {
-//   Navigation.navigate("profile");
-// };
-
-// DashboardScreen.navigationOptions = {
-//   title: "Welcome",
-//   headerRight: (
-//     <HeaderButton
-//       onPress={handleShowProfile}
-//       source={getAsset("user")}
-//       style={{ padding: 4 }}
-//     />
-//   ),
-// };

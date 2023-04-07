@@ -1,22 +1,10 @@
-import { useState, useEffect, useLayoutEffect } from "react";
-import { NativeStackNavigationProp } from "@react-navigation/native-stack";
-import { RouteProp } from "@react-navigation/native";
-import { HeaderButton } from "./components/HeaderButton";
+import { NavigationProp } from "@react-navigation/native";
+import { useLayoutEffect } from "react";
 import { ImageProps } from "react-native";
-
-type RootStackParamList = {
-  Home: undefined;
-};
-
-type ScreenNavigationProp = NativeStackNavigationProp<
-  RootStackParamList,
-  string
->;
-type ScreenRouteProp = RouteProp<RootStackParamList, string>;
+import { HeaderButton } from "./components/HeaderButton";
 
 type Props = {
-  navigation: ScreenNavigationProp;
-  route: ScreenRouteProp;
+  navigation: NavigationProp<{}>;
   onPress: () => void;
   imageSource: ImageProps["source"];
 };
@@ -26,21 +14,11 @@ export const useHeaderRightButton = ({
   onPress,
   imageSource,
 }: Props) => {
-  const [headerRightButton, setHeaderRightButton] =
-    useState<JSX.Element | null>(null);
-
   useLayoutEffect(() => {
-    const headerButton = (
-      <HeaderButton onPress={onPress} source={imageSource} />
-    );
-
     navigation.setOptions({
-      headerRight: () => headerButton,
-      headerTitle: "Welcome",
+      headerRight: () => (
+        <HeaderButton onPress={onPress} source={imageSource} />
+      ),
     });
-
-    setHeaderRightButton(headerButton);
   }, [navigation, onPress, imageSource]);
-
-  return headerRightButton;
 };

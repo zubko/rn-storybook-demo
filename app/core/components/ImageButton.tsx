@@ -1,4 +1,3 @@
-import { styled } from "nativewind";
 import { FC } from "react";
 import {
   TouchableOpacity,
@@ -17,13 +16,7 @@ export const ImageButton: FC<ImageButtonProps> = ({
   imageStyle,
   ...otherProps
 }) => (
-  <TouchableOpacity className="content-center items-center" {...otherProps}>
-    <Image source={source} style={[imageStyle, { backgroundColor: "red" }]} />
+  <TouchableOpacity className="justify-center items-center" {...otherProps}>
+    <Image source={source} style={imageStyle} />
   </TouchableOpacity>
 );
-
-// export const ImageButton = styled(ImageButtonOrig, {
-//   props: {
-//     imageStyle: true,
-//   },
-// });
