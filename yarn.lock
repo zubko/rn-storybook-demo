@@ -7752,6 +7752,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"immer@npm:^9.0.21":
+  version: 9.0.21
+  resolution: "immer@npm:9.0.21"
+  checksum: 70e3c274165995352f6936695f0ef4723c52c92c92dd0e9afdfe008175af39fa28e76aafb3a2ca9d57d1fb8f796efc4dd1e1cc36f18d33fa5b74f3dfb0375432
+  languageName: node
+  linkType: hard
+
 "import-fresh@npm:^2.0.0":
   version: 2.0.0
   resolution: "import-fresh@npm:2.0.0"
@@ -11438,6 +11445,7 @@ __metadata:
     babel-plugin-module-resolver: ^5.0.0
     clsx: ^1.2.1
     eslint: ^8.19.0
+    immer: ^9.0.21
     jest: ^29.2.1
     metro-react-native-babel-preset: 0.73.8
     nativewind: ^2.0.11
@@ -11450,6 +11458,7 @@ __metadata:
     react-test-renderer: 18.2.0
     tailwindcss: ^3.2.7
     typescript: 4.8.4
+    zustand: ^4.3.7
   languageName: unknown
   linkType: soft
 
@@ -13536,7 +13545,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"use-sync-external-store@npm:^1.0.0, use-sync-external-store@npm:^1.1.0":
+"use-sync-external-store@npm:1.2.0, use-sync-external-store@npm:^1.0.0, use-sync-external-store@npm:^1.1.0":
   version: 1.2.0
   resolution: "use-sync-external-store@npm:1.2.0"
   peerDependencies:
@@ -14018,5 +14027,22 @@ __metadata:
   version: 0.1.0
   resolution: "yocto-queue@npm:0.1.0"
   checksum: f77b3d8d00310def622123df93d4ee654fc6a0096182af8bd60679ddcdfb3474c56c6c7190817c84a2785648cdee9d721c0154eb45698c62176c322fb46fc700
+  languageName: node
+  linkType: hard
+
+"zustand@npm:^4.3.7":
+  version: 4.3.7
+  resolution: "zustand@npm:4.3.7"
+  dependencies:
+    use-sync-external-store: 1.2.0
+  peerDependencies:
+    immer: ">=9.0"
+    react: ">=16.8"
+  peerDependenciesMeta:
+    immer:
+      optional: true
+    react:
+      optional: true
+  checksum: 355b414ba4830b6106bcb888077c5f90f40ed649e4127e337eff4fb4ea90e88bf5cccf32344711d743cb92a676a0643a6ab3674ddc60ed49f17ea1bc8e3f58e2
   languageName: node
   linkType: hard

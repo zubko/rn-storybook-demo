@@ -21,7 +21,7 @@ module.exports = {
         main: "#583384",
         text: "#000",
         subtle: "#666",
-        secondary: "#333",
+        text2: "#333",
       },
     },
   },

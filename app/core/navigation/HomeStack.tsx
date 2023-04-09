@@ -1,12 +1,14 @@
 import { DashboardScreen } from "@app/features/dashboard/screens/DashboardScreen";
+import { ProfileScreen } from "@app/features/profile/screens/ProfileScreen";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-const HomeStack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator();
 
 export const HomeNavigator = () => {
   return (
-    <HomeStack.Navigator>
-      <HomeStack.Screen name="Dashboard" component={DashboardScreen} />
-    </HomeStack.Navigator>
+    <Stack.Navigator>
+      <Stack.Screen name="Dashboard" component={DashboardScreen} />
+      <Stack.Screen name="Profile" component={ProfileScreen} />
+    </Stack.Navigator>
   );
 };

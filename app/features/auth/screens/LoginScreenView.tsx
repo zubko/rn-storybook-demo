@@ -11,25 +11,21 @@ import { H1 } from "@app/core/components/Text";
 
 export type LoginScreenViewProps = {
   lastEmail: string;
-  startLogin: (args: { email: string; password: string }) => void;
-  switchToSignup: () => void;
+  onLoginPress: (args: { email: string; password: string }) => void;
+  onSwitchToSignup: () => void;
   isActive: boolean;
   error?: Error;
 };
 
 export const LoginScreenView: FC<LoginScreenViewProps> = ({
   lastEmail,
-  startLogin,
-  switchToSignup,
+  onLoginPress,
+  onSwitchToSignup,
   isActive,
   error,
 }) => {
   const [email, setEmail] = useState(lastEmail);
   const [password, setPassword] = useState("");
-
-  const handleLoginPress = () => {
-    startLogin({ email, password });
-  };
 
   return (
     <ScreenContainer>
@@ -40,12 +36,14 @@ export const LoginScreenView: FC<LoginScreenViewProps> = ({
         <PasswordInput value={password} onChangeText={setPassword} />
         <SecondaryButton
           className="mt-4"
-          onPress={switchToSignup}
+          onPress={onSwitchToSignup}
           title="Not registered yet?"
         />
         <PrimaryButton
           className="mt-4"
-          onPress={handleLoginPress}
+          onPress={() => {
+            onLoginPress({ email, password });
+          }}
           title="Login"
           isInProgress={isActive}
         />

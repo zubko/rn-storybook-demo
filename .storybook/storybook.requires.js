@@ -61,6 +61,8 @@ const getStories = () => {
     "./app/features/auth/screens/LoginScreenView.stories.tsx": require("../app/features/auth/screens/LoginScreenView.stories.tsx"),
     "./app/features/dashboard/components/StartButton.stories.tsx": require("../app/features/dashboard/components/StartButton.stories.tsx"),
     "./app/features/dashboard/screens/DashboardScreenView.stories.tsx": require("../app/features/dashboard/screens/DashboardScreenView.stories.tsx"),
+    "./app/features/profile/components/ProfileImage.stories.tsx": require("../app/features/profile/components/ProfileImage.stories.tsx"),
+    "./app/features/profile/screens/ProfileScreenView.stories.tsx": require("../app/features/profile/screens/ProfileScreenView.stories.tsx"),
   };
 };
 

@@ -11,8 +11,8 @@ type LoginScreenViewStory = ComponentStoryObj<typeof LoginScreenView>;
 
 const defaultArgs: Partial<LoginScreenViewProps> = {
   lastEmail: "last-email@test.com",
-  startLogin: action("startLogin"),
-  switchToSignup: action("switchToSignup"),
+  onLoginPress: action("startLogin"),
+  onSwitchToSignup: action("switchToSignup"),
 };
 
 export const Basic: LoginScreenViewStory = {
