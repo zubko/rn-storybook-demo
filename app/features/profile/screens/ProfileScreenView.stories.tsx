@@ -26,5 +26,8 @@ type ProfileScreenViewStory = ComponentStoryObj<typeof ProfileScreenView>;
 export const Basic: ProfileScreenViewStory = {
   args: {
     onLogout: action("onLogout"),
+    email: "test@test.com",
+    quizCount: 10,
+    score: 100,
   },
 };
