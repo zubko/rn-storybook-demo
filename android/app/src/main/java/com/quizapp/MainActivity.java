@@ -13,6 +13,13 @@ public class MainActivity extends ReactActivity {
   protected void onCreate(Bundle savedInstanceState) {
     // for react-native-screens
     super.onCreate(null);
+
+    if (BuildConfig.DEBUG) {
+      StorybookDevMenuOptionHandler.initDevMenuItem(
+              getApplicationContext(),
+              getReactInstanceManager().getDevSupportManager()
+      );
+    }
   }
 
   /**
