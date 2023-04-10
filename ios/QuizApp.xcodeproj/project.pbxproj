@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* QuizAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* QuizAppTests.m */; };
 		0C80B921A6F3F58F76C31292 /* libPods-QuizApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-QuizApp.a */; };
+		11B6654129E3657A005E9827 /* RCTStorybookDevMenuModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B6654029E3657A005E9827 /* RCTStorybookDevMenuModule.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -30,6 +31,8 @@
 		00E356EE1AD99517003FC87E /* QuizAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* QuizAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizAppTests.m; sourceTree = "<group>"; };
+		11B6653F29E3651F005E9827 /* RCTStorybookDevMenuModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RCTStorybookDevMenuModule.h; path = QuizApp/RCTStorybookDevMenuModule.h; sourceTree = "<group>"; };
+		11B6654029E3657A005E9827 /* RCTStorybookDevMenuModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RCTStorybookDevMenuModule.m; path = QuizApp/RCTStorybookDevMenuModule.m; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = QuizApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = QuizApp/AppDelegate.mm; sourceTree = "<group>"; };
@@ -92,6 +95,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				11B6653F29E3651F005E9827 /* RCTStorybookDevMenuModule.h */,
+				11B6654029E3657A005E9827 /* RCTStorybookDevMenuModule.m */,
 			);
 			name = QuizApp;
 			sourceTree = "<group>";
@@ -413,6 +418,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				11B6654129E3657A005E9827 /* RCTStorybookDevMenuModule.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
