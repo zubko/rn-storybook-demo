@@ -1,4 +1,1 @@
-- [ ] add font sizes to Tailwind and make components
-- [ ] add colors to Tailwind and make components
-- [ ] tailwind prop for border radius
-- [ ] add stories to the rest of components
+- [ ] add visual regression tests for storybook stories
